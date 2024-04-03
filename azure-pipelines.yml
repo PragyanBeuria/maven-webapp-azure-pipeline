@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  pool26
+  poolfinal
 
 steps:
 - task: Maven@3
