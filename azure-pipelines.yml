@@ -26,7 +26,7 @@ steps:
   inputs:
     SourceFolder: 'C:\agent\workfolder\2\s\webapp\target\webapp.war'
     Contents: '**/*.war'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/warfile'
 
 - task: PublishBuildArtifacts@1
   inputs:
