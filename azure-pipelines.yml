@@ -23,7 +23,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'C:\agent\workfolder\2\s\webapp\target\webapp.war'
+    SourceFolder: 'C:\agent\workfolder\2\s1'
     Contents: '**/*.war'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
