@@ -19,7 +19,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'C:\agent\_work\2\s1'
+    SourceFolder: 'C:\agent\_work\4\s'
     Contents: '**/*.war'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
@@ -28,11 +28,6 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'warfile'
     publishLocation: 'Container'
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: 'C:\agent\_work\4\s'
-    Contents: '**/*.war'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: SonarQubePrepare@5
   inputs:
     SonarQube: 'sonaranalysis'
