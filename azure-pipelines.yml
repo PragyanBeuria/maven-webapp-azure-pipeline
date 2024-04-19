@@ -19,7 +19,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'C:\agent\workfolder\2\s1'
+    SourceFolder: 'C:\agent\_work\2\s1'
     Contents: '**/*.war'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
